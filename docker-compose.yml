@@ -12,7 +12,7 @@ volumes:
 
 services:
   dtrack-apiserver:
-    image: dependencytrack/apiserver
+    image: ghcr.io/pyagni/dependency-track:apiserver
     environment:
       # The Dependency-Track container can be configured using any of the
       # available configuration properties defined in:
