@@ -99,7 +99,7 @@ jobs:
       - name: Set Container Tags
         id: tags
         run: |-
-          TAGS="ghcr.io/pyagni/dependency-track:${{ matrix.distribution }}:${{ inputs.app-version }}"
+          TAGS="ghcr.io/pyagni/dependency-track:${{ matrix.distribution }}"
           echo "::set-output name=tags::${TAGS}"
 
       - name: Build multi-arch Container Image
